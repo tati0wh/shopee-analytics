@@ -1,7 +1,7 @@
 services:
 
   mlflow:
-    image: ghcr.io/mlflow/mlflow:v2.11.1
+    image: ghcr.io/mlflow/mlflow:v2.20.2
     container_name: shopee-mlflow
     ports:
       - "5000:5000"

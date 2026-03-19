@@ -16,3 +16,7 @@ __pycache__/
 
 # mlflow
 mlruns/
+
+# MLflow container
+mlruns/
+mlflow.db

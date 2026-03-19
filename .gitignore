@@ -1,0 +1,18 @@
+# ambiente virtual
+.venv/
+
+# dados brutos
+data/
+
+# python
+__pycache__/
+*.pyc
+
+# jupyter
+.ipynb_checkpoints/
+
+# variáveis de ambiente
+.env
+
+# mlflow
+mlruns/

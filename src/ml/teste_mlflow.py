@@ -23,7 +23,6 @@ with mlflow.start_run(run_name="minha-primeira-run-v2"):
     acuracia = accuracy_score(y_test, modelo.predict(X_test))
     mlflow.log_metric("acuracia", acuracia)
 
-    # salva o modelo de forma simples, sem a API nova
     import pickle, os
     os.makedirs("mlflow-data/artifacts", exist_ok=True)
     with open("mlflow-data/artifacts/modelo.pkl", "wb") as f:
@@ -31,6 +30,6 @@ with mlflow.start_run(run_name="minha-primeira-run-v2"):
 
     mlflow.log_artifact("mlflow-data/artifacts/modelo.pkl")
 
-    print(f"Experimento registrado")
+    print(f"Experimento registrado com sucesso!")
     print(f"Acurácia: {acuracia:.4f}")
     print(f"Veja em: http://localhost:5000")
